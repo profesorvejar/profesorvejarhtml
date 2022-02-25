@@ -1,0 +1,103 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Diseño web adaptativo</title>
+        <style type="text/css">
+ 
+            body {
+              background: #cccccc
+            }
+             
+            nav ul {
+                clear: both;
+            }
+             
+            nav ul li {
+                list-style-type: none;
+                background-color: #cccccc;
+                padding: 5px
+            }
+             
+            #wrapper {
+              background: #ffffff;
+              padding: 10px;
+              width: 95%
+            } 
+             
+            article#welcome {
+                clear: both;
+            }
+ 
+            article#welcome img {
+                max-width: 100%
+            }
+ 
+        /* Máquinas de escritorio */
+ 
+        @media only screen and (min-width : 800px) {
+ 
+            nav ul {
+                height: 40px                    
+            }
+ 
+            nav ul li {
+                float: left;
+                margin-right: 30px;
+                width: 125px
+            }
+			#wrapper{background:green;}
+        }
+ 
+        /* Anchuras inferiores a 800px (smartphones, en nuestro ejemplo) */
+ 
+        @media only screen and (max-width : 800px) {
+ 
+            nav ul {
+                height: 165px;
+            }
+ 
+            nav ul li {
+                text-align: center;
+                clear: both;
+                margin-bottom: 15px;
+                width: 90%
+            }  
+ 
+        }
+             
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <hgroup>
+                    <h1>Hola mundo</h1>
+                </hgroup>
+            </header>
+            <nav>
+                <ul>
+                    <li>Inicio</li>
+                    <li>Quiénes somos</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+            <article id="welcome">
+                <img src="sky.jpg" alt="Sky" />
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+            <footer></footer>
+        </div>
+    </body>
+</html>
